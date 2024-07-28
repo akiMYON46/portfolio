@@ -377,7 +377,7 @@ header {
   
   /* class="my-social"の中のliの中のaにマウスカーソルが乗った時 */
   .my-social li a:hover {
-    color: transparent; /* 背景に設定したグラデーションが表示されるように文字色を透明（transparent）にする */
+    color: #589e6c; /* 背景に設定したグラデーションが表示されるように文字色を透明（transparent）にする */
     transform: scale(1.5); /* 要素を1.5倍に変形させます */
   }
   /* bodyとmainの間に差し込まれるフィルタ要素 */
