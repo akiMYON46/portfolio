@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Playfair Display', serif;
-    background-color: #002600;
+    background-color: #001c00;
     color: #e6e6e6;
 }
 
@@ -10,7 +10,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #0e2d1c;
-    color: white;
+    color: #f0f0f0;
     padding: 10px 20px;
     position: fixed;
     width: 100%;
@@ -187,7 +187,7 @@ header {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    color:#f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -203,7 +203,7 @@ header {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -219,7 +219,7 @@ header {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -235,7 +235,7 @@ header {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -251,7 +251,7 @@ header {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -391,6 +391,9 @@ header {
   z-index: -1; /* フィルタ要素自体の重ね合わせ位置を最下部にする（bodyの上、mainの下） */
 }
 @media screen and (width < 896px) {
+    .top-section{
+        height: 50vh;
+    }
     main {
         /* モバイル表示用のGrid表示のコンテンツ配置テンプレートに変更する */
         grid-template: "photo  " auto
