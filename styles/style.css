@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Playfair Display', serif;
+    font-family: "Noto Serif JP", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HGS明朝E", "ＭＳ Ｐ明朝", serif;
     background-color: #001c00;
     color: #e6e6e6;
 }
@@ -44,7 +44,7 @@ header {
     background-size: cover;  /* 背景画像のサイズをカバー */
     background-position: center;
     background-repeat: no-repeat;  /* 画像の繰り返しを防ぐ */
-    opacity: 0.3;
+    opacity: 0.6;
     z-index: -1;
 }
 .background-image img{
@@ -54,7 +54,7 @@ header {
 .welcome-message {
     position: relative;
     z-index: 1;
-    font-family: 'Playfair Display', serif;
+
     font-size: 24px;
     color: white;
 }
@@ -62,7 +62,7 @@ header {
     display: block;
     text-align: center  ;
     z-index: 1;
-    font-family: 'Playfair Display', serif;
+
     font-size: 48px;
     color: white;
 }
@@ -251,7 +251,7 @@ header {
     display: block;
     text-align: center  ;
     z-index: 1;
-    font-family: 'Playfair Display', serif;
+
     font-size: 48px;
     color: white;
     margin-top: 10vh;
