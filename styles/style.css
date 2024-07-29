@@ -25,6 +25,7 @@ header {
 .menu-icon {
     cursor: pointer;
     font-size: 24px;
+    z-index: 1000;
 }
 
 .navbar {
@@ -38,7 +39,10 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    z-index: 1000;
+    z-index: 100;
+}
+.navbar.active {
+    display: flex;
 }
 
 .nav ul {
@@ -279,6 +283,14 @@ header {
     padding: 60px 20px;
 }
 
+.profile-text {
+    display: block;
+    text-align: center  ;
+    z-index: 1;
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    color: white;
+}
 /* 全ての要素（疑似要素含む）を対象とする */
 *, *::before, *::after {
     margin: 0; /* 外部余白のリセット */

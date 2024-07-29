@@ -8,5 +8,6 @@ document.querySelector('#menu-icon').addEventListener('click', (ev) => {
       menuicon.textContent = '×';
     } else {
       menuicon.textContent = '☰';
+      
     }
   });
