@@ -27,7 +27,7 @@ header {
     font-size: 24px;
 }
 
-.menu {
+.navbar {
     display: none;
     position: fixed;
     top: 0;
@@ -287,22 +287,13 @@ header {
   }
   
   /* Webページ全体の設定を記載 */
-  :root { /* htmlを指定した場合と同じような意味合いです */
-    /* 書体の設定 */
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
-    /* 日本語の字詰を自動カーニングするように設定 */
-    font-feature-settings: "palt";
-    /* 標準の文字サイズを指定 */
+  :root{
     font-size: 14pt;
   
     /* 文字の色を変数に入れておく */
     --text-color: #f0f0f0;
   }
   body   {
-    background-image: url("background.jpg");  /* 背景画像設定 */
-    background-attachment: fixed; /* 背景画像をスクロールしても同じ位置になるように設定 */
-    background-position: center center; /* 背景画像の配置が中央配置になるように設定 */
-    
     display: grid; /* grid表示化 */
     place-items: center; /* bodyタグ直下に配置される要素を中央配置させる（grid表示化が必要） */
   
