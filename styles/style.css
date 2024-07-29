@@ -41,9 +41,9 @@ header {
     width: 100%;
     height: 100%;
     background-image: url('image1.jpg');
-    background-size: cover;  /* 背景画像のサイズをカバー */
+    background-size: cover; 
     background-position: center;
-    background-repeat: no-repeat;  /* 画像の繰り返しを防ぐ */
+    background-repeat: no-repeat; 
     opacity: 0.6;
     z-index: -1;
 }
@@ -119,31 +119,31 @@ header {
 }
 .photo1 img{
     width: 70vw;
-    height: auto;  /* 幅に合わせて高さを自動調整 */
+    height: auto; 
     display: block;
     margin: 0 auto;
 }
 .photo2 img{
     width: 70vw;
-    height: auto;  /* 幅に合わせて高さを自動調整 */
+    height: auto; 
     display: block;
     margin: 0 auto;
 }
 .photo3 img{
     width: 70vw;
-    height: auto;  /* 幅に合わせて高さを自動調整 */
+    height: auto; 
     display: block;
     margin: 0 auto;
 }
 .photo4 img{
     width: 70vw;
-    height: auto;  /* 幅に合わせて高さを自動調整 */
+    height: auto; 
     display: block;
     margin: 0 auto;
 }
 .photo5 img{
     width: 70vw;
-    height: auto;  /* 幅に合わせて高さを自動調整 */
+    height: auto; 
     display: block;
     margin: 0 auto;
 }
@@ -161,7 +161,7 @@ header {
     align-items: center;
     opacity: 0;
     transition: opacity 1s ease;
-    white-space: pre-line;  /* 改行を解釈 */
+    white-space: pre-line; 
 }
 .photo2::after {
     content: "ILCE-7CM2\ATamron 35-150mm f2-2.8 A058\ASS 1/1,000s\AISO 100\A f2.8 \A 150mm+APS-C ";
@@ -177,7 +177,7 @@ header {
     align-items: center;
     opacity: 0;
     transition: opacity 1s ease;
-    white-space: pre-line;  /* 改行を解釈 */
+    white-space: pre-line; 
 }
 .photo3::after {
     content: "ILCE-7CM2\ATamron 35-150mm f2-2.8 A058\ASS 1/500s\AISO 6400\A f2.2 \A 36mm ";
@@ -193,7 +193,7 @@ header {
     align-items: center;
     opacity: 0;
     transition: opacity 1s ease;
-    white-space: pre-line;  /* 改行を解釈 */
+    white-space: pre-line; 
 }
 .photo4::after {
     content: "ILCE-7CM2\ATamron 35-150mm f2-2.8 A058\ASS 1/8000s\AISO 5000\A f2.8 \A 150mm+APS-C ";
@@ -209,7 +209,7 @@ header {
     align-items: center;
     opacity: 0;
     transition: opacity 1s ease;
-    white-space: pre-line;  /* 改行を解釈 */
+    white-space: pre-line; 
 }
 .photo5::after {
     content: "ILCE-7CM2\ASONY FE 50mm 2.5 G\ASS 1/80s\AISO 16000\A f2.5";
@@ -225,22 +225,22 @@ header {
     align-items: center;
     opacity: 0;
     transition: opacity 1s ease;
-    white-space: pre-line;  /* 改行を解釈 */
+    white-space: pre-line; 
 }
 .photo1:hover::after {
-    opacity: 1;  /* ホバー時に表示 */
+    opacity: 1; 
 }
 .photo2:hover::after {
-    opacity: 1;  /* ホバー時に表示 */
+    opacity: 1; 
 }
 .photo3:hover::after {
-    opacity: 1;  /* ホバー時に表示 */
+    opacity: 1; 
 }
 .photo4:hover::after {
-    opacity: 1;  /* ホバー時に表示 */
+    opacity: 1; 
 }
 .photo5:hover::after {
-    opacity: 1;  /* ホバー時に表示 */
+    opacity: 1; 
 }
 .profile-section {
     display: flex;
@@ -255,132 +255,116 @@ header {
     font-size: 48px;
     color: white;
     margin-top: 10vh;
-}
-/* 全ての要素（疑似要素含む）を対象とする */
+} 
 *, *::before, *::after {
-    margin: 0; /* 外部余白のリセット */
-    padding: 0; /* 内部余白のリセット */
-    box-sizing: border-box; /* widthやheightなどのサイズ指定をボーダーを含んだサイズで指定できるように変更 */
-  }
-  
-  /* Webページ全体の設定を記載 */
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  } 
   :root{
-    font-size: 14pt;
-  
-    /* 文字の色を変数に入れておく */
+    font-size: 14pt; 
     --text-color: #f0f0f0;
   }
   body   {
-    display: grid; /* grid表示化 */
-    place-items: center; /* bodyタグ直下に配置される要素を中央配置させる（grid表示化が必要） */
+    display: grid; 
+    place-items: center; 
   
-    min-height: 100vh; /* 最低高さを表示領域の100%に設定（vh:ビューハイト） */
+    min-height: 100vh; 
   
-    color: var(--text-color); /* ドキュメント全体の文字色を設定 varは変数を使用するときに使います */
+    color: var(--text-color); 
   }
   main {
-    display: grid; /* grid表示化 */
+    display: grid; 
     /* Grid表示のコンテンツ配置テンプレートを作成する */
     grid-template: "photo   name   " auto
                    "photo   texts  " auto
                    "photo   social " auto
                    / 300px minmax(300px, 450px);
-    gap: 0 2rem;  /* コンテンツ配置の隙間サイズを指定（行間:0,列間:2文字分） */
+    gap: 0 2rem; 
   
-    padding: 2rem;  /* 内側余白を2文字分 */
-    max-width: 90%; /*親要素（body）の90%が最大横幅となるように調整（小さい画面への配慮） */
+    padding: 2rem; 
+    max-width: 90%; 
   
     
-    backdrop-filter: blur(20px);  /* 背景をすりガラス状に設定 */
-  }
-  
-  /* class="my-photo" */
+    backdrop-filter: blur(20px); 
+  } 
 .my-photo {
-    grid-area: photo;  /* Gridテンプレートの「photo」に配置 */
-    align-self: center; /* 内部の上下配置を中央寄せにする */
-  }
-  
-  /* class="my-photo" の中の img */
+    grid-area: photo; 
+    align-self: center; 
+  } 
   .my-photo img {
-    display: block; /* 画像自体を箱として表示させる */
-    width: 300px; /* 横幅の設定 */
-    height: 300px; /* 高さの設定 */
-    border-radius: 4000px; /* 角丸を縦横のサイズの半分以上の値を指定することで正方形の画像は円にくり抜かれる、99999pxなどでもOK */
+    display: block; 
+    width: 300px; 
+    height: 300px; 
+    border-radius: 4000px; 
   }
   
   
   .my-name {
-    grid-area: name; /* mainタグのGridテンプレートの「name」に配置 */
-    font-size: 4rem; /* 文字サイズを基準サイズの400%とする */
-    text-shadow: -1px 1px 0 #232323; /* 文字の影をさりげなく入れ、ちょっとだけ立体っぽく見せる */
-    letter-spacing: 0.1em; /* 字間を0.1文字分開ける */
+    grid-area: name; 
+    font-size: 4rem; 
+    text-shadow: -1px 1px 0 #232323; 
+    letter-spacing: 0.1em; 
   }
 
   
   .my-texts {
-    grid-area: texts; /* mainタグのGridテンプレートの「texts」に配置 */
+    grid-area: texts; 
   }
   .my-social {
-    grid-area: social;  /* mainタグのGridテンプレートの「social」に配置 */
-    list-style: none; /* リストの・が邪魔なので消します */
-    display: flex; /* .my-social内部をフレキシブル表示に切り替え（標準で横並びになります） */
-    margin-top: 1.5rem; /* 上部に1.5文字分の外部余白を設定 */
-  }
-  /* class="my-social"の中のli */
+    grid-area: social; 
+    list-style: none; 
+    display: flex; 
+    margin-top: 1.5rem; 
+  } 
 .my-social li {
-    line-height: 1; /* 文字高さを1文字分とする */
-    margin-right: 1rem; /* 右側に1文字分の外側余白をつける */
-    font-size: 2rem; /* アイコン(文字)のサイズを2文字分とする */
-  }
-  /* class="my-social"の中のliの中のa */
+    line-height: 1; 
+    margin-right: 1rem; 
+    font-size: 2rem; 
+  } 
   .my-social li a {
-    display: inline-block; /* リンクテキストをインラインブロック要素として表示 */
-    text-decoration: none;  /* リンクテキストの装飾をなくす */
-    color: var(--text-color);  /* 文字色をデフォルトのリンクカラーからこの文書の文字色へ変更 */
+    display: inline-block; 
+    text-decoration: none; 
+    color: var(--text-color); 
     transition: 0.5s transform, 0.5s color;
   
     -webkit-background-clip: text;
     background-clip: text;
-  }
-  
-  /* class="my-social"の中のliの中のaにマウスカーソルが乗った時 */
+  } 
   .my-social li a:hover {
-    color: #589e6c; /* 背景に設定したグラデーションが表示されるように文字色を透明（transparent）にする */
-    transform: scale(1.5); /* 要素を1.5倍に変形させます */
-  }
-  /* bodyとmainの間に差し込まれるフィルタ要素 */
+    color: #589e6c; 
+    transform: scale(1.5); 
+  } 
 .background-filter {
-  width: 100%;  /* bodyタグと同じ大きさにする */
-  height: 100%;  /* bodyタグと同じ大きさにする */
-  position: fixed; /* bodyタグの開始位置を基準として、位置を固定します */
-  top: 0; /* bodyタグの開始位置を基準として、位置を固定します */
-  left: 0; /* bodyタグの開始位置を基準として、位置を固定します */
+  width: 100%; 
+  height: 100%; 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
 
-  z-index: -1; /* フィルタ要素自体の重ね合わせ位置を最下部にする（bodyの上、mainの下） */
+  z-index: -1; 
 }
 @media screen and (width < 896px) {
     .top-section{
         height: 50vh;
     }
-    main {
-        /* モバイル表示用のGrid表示のコンテンツ配置テンプレートに変更する */
+    main { 
         grid-template: "photo  " auto
                        "name   " auto
                        "texts  " auto
                        "social " auto
                        / auto;
-        gap: 1rem 0;  /* コンテンツ配置の隙間サイズを変更（行間:1文字分,列間:0） */
+        gap: 1rem 0; 
     
-        margin: 4rem 0; /* 外側の余白上下4文字分付ける（左右は0） */
-      }
-     /* 画面幅が896px未満の場合、下記CSSを使用する */
+        margin: 4rem 0; 
+      } 
     .my-name {
-      font-size: 13.5vw; /* 文字サイズを画面サイズの13.5％幅とする */
-      text-align: center; /* 文字の配置をセンタリングする */
+      font-size: 13.5vw; 
+      text-align: center; 
     }
     .my-photo img {
-        width: 70vw; /* 横幅の設定を画面横サイズの70% */
-        height: 70vw; /* 高さの設定を画面横サイズの70% */
+        width: 70vw; 
+        height: 70vw; 
       }
     }
 footer {
